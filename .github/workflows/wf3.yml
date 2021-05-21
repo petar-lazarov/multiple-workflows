@@ -1,0 +1,16 @@
+name: WF Three
+on: [workflow_dispatch]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup client
+        run: |
+          curl -fsSL https://testspace-client.s3.amazonaws.com/testspace-linux-dev.tgz | sudo tar -zxvf- -C /usr/local/bin
+          testspace config url munderseth.stridespace.com
+      - name: Push result to Testspace server
+        run: |
+           testspace [wf2]results.xml
+        if: always()
