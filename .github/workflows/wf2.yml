@@ -1,4 +1,4 @@
-name: CI
+name: CI Two
 on: [workflow_dispatch, push]
 
 jobs:
