@@ -1,4 +1,4 @@
-name: CI One
+name: WF One
 on: [workflow_dispatch, push]
 
 jobs:
