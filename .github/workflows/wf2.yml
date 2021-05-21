@@ -12,5 +12,5 @@ jobs:
           testspace config url munderseth.stridespace.com
       - name: Push result to Testspace server
         run: |
-           testspace [wf1]results.xml
+           testspace [wf2]results.xml
         if: always()
