@@ -1,5 +1,5 @@
 name: WF One
-on: [workflow_dispatch, push]
+on: [workflow_dispatch, push, pull_request]
 
 jobs:
   build:
