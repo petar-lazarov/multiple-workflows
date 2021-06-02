@@ -9,7 +9,7 @@ jobs:
       - name: Setup client
         run: |
           curl -fsSL https://testspace-client.s3.amazonaws.com/testspace-linux-dev.tgz | sudo tar -zxvf- -C /usr/local/bin
-          testspace config url munderseth.stridespace.com
+          testspace config url petar.stridespace.com
       - name: Push result to Testspace server
         run: |
            testspace [wf3]results.xml
